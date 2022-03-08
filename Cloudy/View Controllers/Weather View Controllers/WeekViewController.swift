@@ -92,7 +92,7 @@ class WeekViewController: WeatherViewController {
 
     // MARK: - Actions
 
-    func didRefresh(sender: UIRefreshControl) {
+    @objc func didRefresh(sender: UIRefreshControl) {
         delegate?.controllerDidRefresh(controller: self)
     }
     
