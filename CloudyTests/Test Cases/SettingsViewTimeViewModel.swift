@@ -43,7 +43,7 @@ class SettingsViewTimeViewModelTests: XCTestCase {
 
         let viewModel = SettingsViewTimeViewModel(timeNotation: .twelveHour)
 
-        XCTAssertEqual(viewModel.accessoryType, UITableViewCellAccessoryType.checkmark)
+        XCTAssertEqual(viewModel.accessoryType, UITableViewCell.AccessoryType.checkmark)
     }
 
     func testAccessoryType_TwelveHour_TwentyFourHour() {
@@ -52,7 +52,7 @@ class SettingsViewTimeViewModelTests: XCTestCase {
 
         let viewModel = SettingsViewTimeViewModel(timeNotation: .twentyFourHour)
 
-        XCTAssertEqual(viewModel.accessoryType, UITableViewCellAccessoryType.none)
+        XCTAssertEqual(viewModel.accessoryType, UITableViewCell.AccessoryType.none)
     }
 
     func testAccessoryType_TwentyFourHour_TwelveHour() {
@@ -61,7 +61,7 @@ class SettingsViewTimeViewModelTests: XCTestCase {
 
         let viewModel = SettingsViewTimeViewModel(timeNotation: .twelveHour)
 
-        XCTAssertEqual(viewModel.accessoryType, UITableViewCellAccessoryType.none)
+        XCTAssertEqual(viewModel.accessoryType, UITableViewCell.AccessoryType.none)
     }
 
     func testAccessoryType_TwentyFourHour_TwentyFourHour() {
@@ -70,7 +70,7 @@ class SettingsViewTimeViewModelTests: XCTestCase {
 
         let viewModel = SettingsViewTimeViewModel(timeNotation: .twentyFourHour)
         
-        XCTAssertEqual(viewModel.accessoryType, UITableViewCellAccessoryType.checkmark)
+        XCTAssertEqual(viewModel.accessoryType, UITableViewCell.AccessoryType.checkmark)
     }
     
 }

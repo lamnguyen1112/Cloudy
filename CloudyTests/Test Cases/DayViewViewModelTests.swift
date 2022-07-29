@@ -96,8 +96,8 @@ class DayViewViewModelTests: XCTestCase {
 
     func testImage() {
         let viewModelImage = viewModel.image
-        let imageDataViewModel = UIImagePNGRepresentation(viewModelImage!)!
-        let imageDataReference = UIImagePNGRepresentation(UIImage(named: "cloudy")!)!
+        let imageDataViewModel = viewModelImage!.pngData()!
+        let imageDataReference = UIImage(named: "cloudy")!.pngData()!
 
         XCTAssertNotNil(viewModelImage)
         XCTAssertEqual(viewModelImage!.size.width, 236.0)
